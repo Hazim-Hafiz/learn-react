@@ -69,16 +69,17 @@ input[type='text']{
 input[type='submit']{
   margin: 50px auto;
   background: #eee;
-  border: 1;
-  height: 50px;
-  font-size: 16px;
-  border-radius: 30%;
-  padding: 6px 20px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 8px 8px;
   display: block;
   background: #6e3c6e;
   color: white;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  box-shadow: 2px 0px 5px 3px #623362c9;
+  border: 0;
 }
 
 
