@@ -12,6 +12,8 @@ const NewBookForm = () => {
     addBook(title, author);
     setTitle("");
     setAuthor("");
+    const name = document.getElementById("name")
+    name.focus()
   };
   return (
     <motion.form
@@ -21,6 +23,7 @@ const NewBookForm = () => {
       onSubmit={handleSubmit}
     >
       <input
+        id="name"
         type="text"
         placeholder="Book title"
         value={title}
@@ -38,7 +41,6 @@ const NewBookForm = () => {
         initial={{ x: 0, y: -1000 }}
         animate={{ x: 0, y: 0 }}
         transition={{ delay: 0.6 }}
-        whileHover={{ scale: 1.1, delay: 0.1 }}
         type="submit"
         value="add book"
       />
